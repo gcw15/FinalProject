@@ -11,3 +11,9 @@ boxplot(data = Seal_Data, Seal_Data$O2_Nonfeeding, Seal_Data$O2_Feeding,
         xlab = "Nonfeeding Dive                     Feeding Dive", 
         ylab = "Oxygen Consumption (ml O2 Kg^-1)",
         main = "Metabolic Cost of Weddell Seal Dives")
+
+#export plot to results folder as pdf
+
+#export plain text file containing output of test (test stat & p-value)
+
+

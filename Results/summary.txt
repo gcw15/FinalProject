@@ -1,0 +1,13 @@
+Results
+
+	Paired t-test
+
+data:  Seal_Data$O2_Nonfeeding and Seal_Data$O2_Feeding
+t = -13.774, df = 9, p-value = 2.361e-07
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -36.99942 -26.56058
+sample estimates:
+mean of the differences 
+                 -31.78 
+

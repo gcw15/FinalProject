@@ -6,3 +6,8 @@ View(Seal_Data)
 #data analysis - 2 sample t-test, paired
 t.test(Seal_Data$O2_Nonfeeding, Seal_Data$O2_Feeding, paired = TRUE)
 
+#plot to visualize sample data
+boxplot(data = Seal_Data, Seal_Data$O2_Nonfeeding, Seal_Data$O2_Feeding,
+        xlab = "Nonfeeding Dive                     Feeding Dive", 
+        ylab = "Oxygen Consumption (ml O2 Kg^-1)",
+        main = "Metabolic Cost of Weddell Seal Dives")

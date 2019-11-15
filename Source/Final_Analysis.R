@@ -4,7 +4,7 @@ Seal_Data <- read_csv("Desktop/Biostat/FinalProject/Data/Seal_Data.csv")
 View(Seal_Data)
 
 #data analysis - 2 sample t-test, paired
-t.test(Seal_Data$O2_Nonfeeding, Seal_Data$O2_Feeding, paired = TRUE)
+Seal_Test <- t.test(Seal_Data$O2_Nonfeeding, Seal_Data$O2_Feeding, paired = TRUE)
 
 #plot to visualize sample data
 boxplot(data = Seal_Data, Seal_Data$O2_Nonfeeding, Seal_Data$O2_Feeding,
@@ -26,4 +26,9 @@ dev.off()
 
 #export plain text file containing output of test (test stat & p-value)
 
+#no summary function for t-test
+Seal_Test
+
+out <- capture.output(Seal_Test)
+cat("Results", out, file="Desktop/Biostat/FinalProject/Results/summary.txt", sep="\n", append=FALSE)
 

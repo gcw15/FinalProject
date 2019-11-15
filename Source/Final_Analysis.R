@@ -12,7 +12,17 @@ boxplot(data = Seal_Data, Seal_Data$O2_Nonfeeding, Seal_Data$O2_Feeding,
         ylab = "Oxygen Consumption (ml O2 Kg^-1)",
         main = "Metabolic Cost of Weddell Seal Dives")
 
-#export plot to results folder as pdf
+#plot to visualize sample data & export plot to results folder as pdf
+pdf(file = "Desktop/Biostat/FinalProject/Results/Seal_Boxplot.pdf",
+    width = 6,
+    height = 6)
+
+boxplot(data = Seal_Data, Seal_Data$O2_Nonfeeding, Seal_Data$O2_Feeding,
+        xlab = "Nonfeeding Dive                     Feeding Dive", 
+        ylab = "Oxygen Consumption (ml O2 Kg^-1)",
+        main = "Metabolic Cost of Weddell Seal Dives")
+
+dev.off()
 
 #export plain text file containing output of test (test stat & p-value)
 

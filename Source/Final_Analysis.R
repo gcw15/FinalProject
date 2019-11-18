@@ -1,6 +1,6 @@
 #load data in from csv file
 library(readr)
-Seal_Data <- read_csv("Desktop/Biostat/FinalProject/Data/Seal_Data.csv")
+Seal_Data <- read_csv("~/Desktop/Biostat/FinalProject/Data/Seal_Data.csv")
 View(Seal_Data)
 
 #data analysis - 2 sample t-test, paired
@@ -13,7 +13,7 @@ boxplot(data = Seal_Data, Seal_Data$O2_Nonfeeding, Seal_Data$O2_Feeding,
         main = "Metabolic Cost of Weddell Seal Dives")
 
 #plot to visualize sample data & export plot to results folder as pdf
-pdf(file = "Desktop/Biostat/FinalProject/Results/Seal_Boxplot.pdf",
+pdf(file = "~/Desktop/Biostat/FinalProject/Results/Seal_Boxplot.pdf",
     width = 6,
     height = 6)
 

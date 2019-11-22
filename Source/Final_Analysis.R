@@ -26,7 +26,7 @@ dev.off()
 
 #export plain text file containing output of test (test stat & p-value)
 
-#no summary function for t-test
+#no summary function for t-test, so do not include it in output of results.
 Seal_Test
 
 out <- capture.output(Seal_Test)

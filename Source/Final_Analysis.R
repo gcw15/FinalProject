@@ -30,5 +30,5 @@ dev.off()
 Seal_Test
 
 out <- capture.output(Seal_Test)
-cat("Results", out, file="Desktop/Biostat/FinalProject/Results/summary.txt", sep="\n", append=FALSE)
+cat("Results", out, file="~/Desktop/Biostat/FinalProject/Results/summary.txt", sep="\n", append=FALSE)
 
